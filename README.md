@@ -11,7 +11,7 @@ Your goal is to:
 - Evaluate what your system gets right and wrong
 - Reflect on how this mirrors real world AI recommenders
 
-This version, **VibeMatch 1.0**, is a small content-based recommender that runs in the terminal. It loads a 20-song catalog from `data/songs.csv`, scores every song against a user's taste profile (favorite genre, favorite mood, target energy, target valence, and whether they like acoustic music), and prints the top 5 songs with a score and a plain-language list of reasons for each one.
+This version, **GenreGenie 1.0**, is a small content-based recommender that runs in the terminal. It loads a 20-song catalog from `data/songs.csv`, scores every song against a user's taste profile (favorite genre, favorite mood, target energy, target valence, and whether they like acoustic music), and prints the top 5 songs with a score and a plain-language list of reasons for each one.
 
 ---
 
