@@ -98,39 +98,39 @@ Three "normal" profiles and three edge cases meant to trick the scoring:
 Loaded songs: 20
 
 === High-Energy Pop (genre=pop, mood=happy, energy=0.8, valence=0.85, likes_acoustic=False) ===
- 1. Sunrise City (Neon Echo)             4.95  genre match (+1.0); mood match (+1.0); energy 0.82 vs 0.80 (+1.96); valence 0.84 vs 0.85 (+0.99)
- 2. Rooftop Lights (Indigo Parade)       4.38  related genre indie pop ~ pop (+0.5); mood match (+1.0); energy 0.76 vs 0.80 (+1.92); valence 0.81 vs 0.85 (+0.96)
- 3. Starlight Dash (NOVA9)               4.29  related genre k-pop ~ pop (+0.5); mood match (+1.0); energy 0.88 vs 0.80 (+1.84); valence 0.90 vs 0.85 (+0.95)
- 4. Gym Hero (Max Pulse)                 3.66  genre match (+1.0); energy 0.93 vs 0.80 (+1.74); valence 0.77 vs 0.85 (+0.92)
- 5. Concrete Crown (Verse Theory)        2.73  energy 0.78 vs 0.80 (+1.96); valence 0.62 vs 0.85 (+0.77)
+ 1. Sunrise City (Neon Echo)             4.97  genre match (+2.0); mood match (+1.0); energy 0.82 vs 0.80 (+0.98); valence 0.84 vs 0.85 (+0.99)
+ 2. Rooftop Lights (Indigo Parade)       3.92  related genre indie pop ~ pop (+1.0); mood match (+1.0); energy 0.76 vs 0.80 (+0.96); valence 0.81 vs 0.85 (+0.96)
+ 3. Starlight Dash (NOVA9)               3.87  related genre k-pop ~ pop (+1.0); mood match (+1.0); energy 0.88 vs 0.80 (+0.92); valence 0.90 vs 0.85 (+0.95)
+ 4. Gym Hero (Max Pulse)                 3.79  genre match (+2.0); energy 0.93 vs 0.80 (+0.87); valence 0.77 vs 0.85 (+0.92)
+ 5. Bassline Voltage (Kilowatt Kids)     1.80  energy 0.95 vs 0.80 (+0.85); valence 0.80 vs 0.85 (+0.95)
 
 === Chill Lofi (genre=lofi, mood=chill, energy=0.35, valence=0.6, likes_acoustic=True) ===
- 1. Library Rain (Paper Lanterns)        5.50  genre match (+1.0); mood match (+1.0); energy 0.35 vs 0.35 (+2.00); valence 0.60 vs 0.60 (+1.00); acoustic sound (+0.5)
- 2. Midnight Coding (LoRoom)             5.32  genre match (+1.0); mood match (+1.0); energy 0.42 vs 0.35 (+1.86); valence 0.56 vs 0.60 (+0.96); acoustic sound (+0.5)
- 3. Spacewalk Thoughts (Orbit Bloom)     4.81  related genre ambient ~ lofi (+0.5); mood match (+1.0); energy 0.28 vs 0.35 (+1.86); valence 0.65 vs 0.60 (+0.95); acoustic sound (+0.5)
- 4. Focus Flow (LoRoom)                  4.39  genre match (+1.0); energy 0.40 vs 0.35 (+1.90); valence 0.59 vs 0.60 (+0.99); acoustic sound (+0.5)
- 5. Coffee Shop Stories (Slow Stereo)    3.35  energy 0.37 vs 0.35 (+1.96); valence 0.71 vs 0.60 (+0.89); acoustic sound (+0.5)
+ 1. Library Rain (Paper Lanterns)        5.50  genre match (+2.0); mood match (+1.0); energy 0.35 vs 0.35 (+1.00); valence 0.60 vs 0.60 (+1.00); acoustic sound (+0.5)
+ 2. Midnight Coding (LoRoom)             5.39  genre match (+2.0); mood match (+1.0); energy 0.42 vs 0.35 (+0.93); valence 0.56 vs 0.60 (+0.96); acoustic sound (+0.5)
+ 3. Focus Flow (LoRoom)                  4.44  genre match (+2.0); energy 0.40 vs 0.35 (+0.95); valence 0.59 vs 0.60 (+0.99); acoustic sound (+0.5)
+ 4. Spacewalk Thoughts (Orbit Bloom)     4.38  related genre ambient ~ lofi (+1.0); mood match (+1.0); energy 0.28 vs 0.35 (+0.93); valence 0.65 vs 0.60 (+0.95); acoustic sound (+0.5)
+ 5. Concrete Crown (Verse Theory)        2.55  related genre hip-hop ~ lofi (+1.0); energy 0.78 vs 0.35 (+0.57); valence 0.62 vs 0.60 (+0.98)
 
 === Deep Intense Rock (genre=rock, mood=intense, energy=0.9, valence=0.4, likes_acoustic=False) ===
- 1. Storm Runner (Voltline)              4.90  genre match (+1.0); mood match (+1.0); energy 0.91 vs 0.90 (+1.98); valence 0.48 vs 0.40 (+0.92)
- 2. Gym Hero (Max Pulse)                 3.57  mood match (+1.0); energy 0.93 vs 0.90 (+1.94); valence 0.77 vs 0.40 (+0.63)
- 3. Iron Tide (Black Anvil)              2.68  energy 0.97 vs 0.90 (+1.86); valence 0.22 vs 0.40 (+0.82)
- 4. Night Drive Loop (Neon Echo)         2.61  energy 0.75 vs 0.90 (+1.70); valence 0.49 vs 0.40 (+0.91)
- 5. Concrete Crown (Verse Theory)        2.54  energy 0.78 vs 0.90 (+1.76); valence 0.62 vs 0.40 (+0.78)
+ 1. Storm Runner (Voltline)              4.91  genre match (+2.0); mood match (+1.0); energy 0.91 vs 0.90 (+0.99); valence 0.48 vs 0.40 (+0.92)
+ 2. Gym Hero (Max Pulse)                 2.60  mood match (+1.0); energy 0.93 vs 0.90 (+0.97); valence 0.77 vs 0.40 (+0.63)
+ 3. Night Drive Loop (Neon Echo)         1.76  energy 0.75 vs 0.90 (+0.85); valence 0.49 vs 0.40 (+0.91)
+ 4. Iron Tide (Black Anvil)              1.75  energy 0.97 vs 0.90 (+0.93); valence 0.22 vs 0.40 (+0.82)
+ 5. Concrete Crown (Verse Theory)        1.66  energy 0.78 vs 0.90 (+0.88); valence 0.62 vs 0.40 (+0.78)
 
 === Edge: Genre Not In Catalog (genre=polka, mood=happy, energy=0.6) ===
- 1. Rooftop Lights (Indigo Parade)       2.68  mood match (+1.0); energy 0.76 vs 0.60 (+1.68)
- 2. Sunrise City (Neon Echo)             2.56  mood match (+1.0); energy 0.82 vs 0.60 (+1.56)
- 3. Starlight Dash (NOVA9)               2.44  mood match (+1.0); energy 0.88 vs 0.60 (+1.44)
- 4. Island Time (Sol Rocker)             2.00  energy 0.60 vs 0.60 (+2.00)
- 5. Dirt Road Letters (Hollis Grey)      1.90  energy 0.55 vs 0.60 (+1.90)
+ 1. Rooftop Lights (Indigo Parade)       1.84  mood match (+1.0); energy 0.76 vs 0.60 (+0.84)
+ 2. Sunrise City (Neon Echo)             1.78  mood match (+1.0); energy 0.82 vs 0.60 (+0.78)
+ 3. Starlight Dash (NOVA9)               1.72  mood match (+1.0); energy 0.88 vs 0.60 (+0.72)
+ 4. Island Time (Sol Rocker)             1.00  energy 0.60 vs 0.60 (+1.00)
+ 5. Dirt Road Letters (Hollis Grey)      0.95  energy 0.55 vs 0.60 (+0.95)
 
 === Edge: Acoustic Headbanger (genre=metal, energy=0.95, likes_acoustic=True) ===
- 1. Iron Tide (Black Anvil)              2.96  genre match (+1.0); energy 0.97 vs 0.95 (+1.96)
- 2. Bassline Voltage (Kilowatt Kids)     2.00  energy 0.95 vs 0.95 (+2.00)
- 3. Gym Hero (Max Pulse)                 1.96  energy 0.93 vs 0.95 (+1.96)
- 4. Storm Runner (Voltline)              1.92  energy 0.91 vs 0.95 (+1.92)
- 5. Starlight Dash (NOVA9)               1.86  energy 0.88 vs 0.95 (+1.86)
+ 1. Iron Tide (Black Anvil)              2.98  genre match (+2.0); energy 0.97 vs 0.95 (+0.98)
+ 2. Dirt Road Letters (Hollis Grey)      1.10  energy 0.55 vs 0.95 (+0.60); acoustic sound (+0.5)
+ 3. Bassline Voltage (Kilowatt Kids)     1.00  energy 0.95 vs 0.95 (+1.00)
+ 4. Gym Hero (Max Pulse)                 0.98  energy 0.93 vs 0.95 (+0.98)
+ 5. Midnight Coding (LoRoom)             0.97  energy 0.42 vs 0.95 (+0.47); acoustic sound (+0.5)
 
 === Edge: Empty Profile (no preferences) ===
  1. Bassline Voltage (Kilowatt Kids)     0.00  no preferences matched

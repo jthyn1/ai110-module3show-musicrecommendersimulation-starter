@@ -153,3 +153,9 @@ def test_ties_are_broken_by_title():
     songs = [make_song(id=1, title="Beta"), make_song(id=2, title="Alpha")]
     results = recommend_songs({"genre": "pop"}, songs, k=2)
     assert [song["title"] for song, _, _ in results] == ["Alpha", "Beta"]
+
+
+def test_symbol_only_genre_does_not_match_blank_genre():
+    score, reasons = score_song({"genre": "&&"}, make_song(genre=""))
+    assert score == 0.0
+    assert reasons == []

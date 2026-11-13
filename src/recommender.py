@@ -116,7 +116,7 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
     reasons = []
 
     user_genre = user_prefs.get("genre") or ""
-    if user_genre and normalize_genre(user_genre) == normalize_genre(song["genre"]):
+    if normalize_genre(user_genre) and normalize_genre(user_genre) == normalize_genre(song["genre"]):
         score += GENRE_WEIGHT
         reasons.append(f"genre match (+{GENRE_WEIGHT:.1f})")
     elif genres_related(user_genre, song["genre"]):
