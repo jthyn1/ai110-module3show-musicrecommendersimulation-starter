@@ -212,10 +212,6 @@ Read and complete `model_card.md`:
 
 [**Model Card**](model_card.md)
 
-Write 1 to 2 paragraphs here about what you learned:
+**What I learned about turning data into predictions.** A recommender like this one boils a song down to a few labels and numbers, scores how close each song is to what a user says they like, and sorts the list. I was expecting a lot more identifiers, like pitch, vocal timbre, and instrumentation, but for a simple implementation the features we chose make sense, and the lists mostly felt right. Still, something as complex as music is hard to pin down with just numbers, let alone genre. A recommendation from a real person comes with a conversation and a personality behind it, and an algorithm can't match that depth.
 
-- about how recommenders turn data into predictions
-- about where bias or unfairness could show up in systems like this
-
-
-
+**Where bias and unfairness show up.** A big issue with music recommenders in general is that they draw on what's new and what's popular rather than what might actually be good. All taste is also subjective: a song that one metalhead loves, another might find atrocious. Someone looking for niche music, or with a very particular taste, gets the worst end of the stick from a system like this. A passive listener who simply cares that the music is in the right genre gets the most out of it. In my own version the bias also comes from my labeling choices: the hand-made genre map decides which genres count as "related" (lofi is linked to hip-hop, but metal isn't linked to rock), and that changes who gets good results.

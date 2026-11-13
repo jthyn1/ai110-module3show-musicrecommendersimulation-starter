@@ -191,4 +191,14 @@ Overall, giving genre less weight made the lists match the *vibe* better, mostly
 
 ## 9. Personal Reflection
 
-<!-- Drafted from the reflection interview -->
+**Biggest learning moment.** I was honestly expecting a lot more identifiers to be considered when categorizing music, things like pitch, vocal timbre, and instrumentation. For a simple implementation like this, the ones we chose (genre, mood, energy, valence, acousticness) make sense, but it showed me how much a real system has to leave out or learn some other way.
+
+**Genre matching decision.** I chose to give partial credit to related genres, including names that aren't separate words, because k-pop is a subgenre of pop and should count as one. Lofi also counts as part of hip-hop (though a bit far removed). I deliberately left metal and rock as separate families: despite having similar origins, they still feel like very different genres today. Seeing the results, I'd keep that setup.
+
+**How AI helped, and when I double-checked it.** Using AI helped automate the actual creation of the project while streamlining decision making, but verification and the final decisions were still left up to me. The result is a project that still feels like my own, but that could be rapidly prototyped and delivered, so the functionality and design became the real workflow rather than the production. Because my workflow had the AI stop and ask me about each design decision, there was little that needed to be double-checked afterward. A good example of where I stepped in was how k-pop and other genres that aren't separate words should be classified: the AI's first suggestion only matched whole words, and I changed it so k-pop counts as pop.
+
+**How the results felt.** The recommendations did feel correct for my own metal profile, with Iron Tide first, then Storm Runner and Gym Hero. Some things, like Concrete Crown showing up in both the lofi list and my own list, are a bit outside what I'd expect, but they score low enough not to raise concern. I added valence on top of genre, mood, and energy to try to bring the system closer to the depth of real musical taste, and in that regard it pulled its weight.
+
+**What surprised me.** Even though the lists were mostly accurate, I still think something as complex as music is hard to pin down with just numbers, let alone genre. The lists felt fine, but there's a drawback to an algorithm recommending music instead of real people. There is untold depth in a conversation about a music recommendation, and even just knowing the personality of the person behind the recommendation helps immensely compared to an algorithm.
+
+**What I'd try next.** I'd add a charts option that draws recommendations from what's charting in each genre (or even what isn't), or a bot that reads reviews from different music forums and recommends what's getting positively reviewed. I'd also add the extra classifiers I mentioned above, like pitch, vocal timbre, and instrumentation, as an expansion of the existing idea.
