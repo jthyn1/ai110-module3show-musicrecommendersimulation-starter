@@ -32,6 +32,7 @@ def print_recommendations(name: str, prefs: dict, songs: list, k: int = 5) -> No
 
 
 def main() -> None:
+    """Loads the catalog and prints recommendations for every profile."""
     songs = load_songs("data/songs.csv")
     print(f"Loaded songs: {len(songs)}")
 
