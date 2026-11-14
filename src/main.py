@@ -8,6 +8,7 @@ and prints the top 5 songs for each with their score and reasons.
 from src.recommender import load_songs, recommend_songs
 
 PROFILES = {
+    "Me": {"genre": "metal", "mood": "intense", "energy": 0.9, "valence": 0.4, "likes_acoustic": False},
     "High-Energy Pop": {"genre": "pop", "mood": "happy", "energy": 0.8, "valence": 0.85, "likes_acoustic": False},
     "Chill Lofi": {"genre": "lofi", "mood": "chill", "energy": 0.35, "valence": 0.6, "likes_acoustic": True},
     "Deep Intense Rock": {"genre": "rock", "mood": "intense", "energy": 0.9, "valence": 0.4, "likes_acoustic": False},

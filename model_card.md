@@ -81,10 +81,11 @@ The points are added up (max 5.5), the songs are sorted from highest to lowest, 
 
 ### Profiles tested
 
-Three "normal" profiles and three edge cases meant to trick the scoring:
+My own profile, three "normal" profiles, and three edge cases meant to trick the scoring:
 
 | Profile | Settings | What it tests |
 |---|---|---|
+| Me | metal, intense, energy 0.9, valence 0.4 | My own taste. It has the same targets as Deep Intense Rock, so only the genre differs |
 | High-Energy Pop | pop, happy, energy 0.8, valence 0.85 | The starter's default pop/happy case, plus related-genre credit |
 | Chill Lofi | lofi, chill, energy 0.35, valence 0.6, likes acoustic | Low energy plus the acoustic bonus |
 | Deep Intense Rock | rock, intense, energy 0.9, valence 0.4 | A genre with only one song in the catalog |
@@ -96,6 +97,13 @@ Three "normal" profiles and three edge cases meant to trick the scoring:
 
 ```
 Loaded songs: 20
+
+=== Me (genre=metal, mood=intense, energy=0.9, valence=0.4, likes_acoustic=False) ===
+ 1. Iron Tide (Black Anvil)              3.75  genre match (+2.0); energy 0.97 vs 0.90 (+0.93); valence 0.22 vs 0.40 (+0.82)
+ 2. Storm Runner (Voltline)              2.91  mood match (+1.0); energy 0.91 vs 0.90 (+0.99); valence 0.48 vs 0.40 (+0.92)
+ 3. Gym Hero (Max Pulse)                 2.60  mood match (+1.0); energy 0.93 vs 0.90 (+0.97); valence 0.77 vs 0.40 (+0.63)
+ 4. Night Drive Loop (Neon Echo)         1.76  energy 0.75 vs 0.90 (+0.85); valence 0.49 vs 0.40 (+0.91)
+ 5. Concrete Crown (Verse Theory)        1.66  energy 0.78 vs 0.90 (+0.88); valence 0.62 vs 0.40 (+0.78)
 
 === High-Energy Pop (genre=pop, mood=happy, energy=0.8, valence=0.85, likes_acoustic=False) ===
  1. Sunrise City (Neon Echo)             4.97  genre match (+2.0); mood match (+1.0); energy 0.82 vs 0.80 (+0.98); valence 0.84 vs 0.85 (+0.99)
@@ -151,6 +159,12 @@ Loaded songs: 20
 
 | Pair | What changed and why it makes sense |
 |---|---|
+| Me vs Deep Intense Rock | Same mood, energy, and valence targets. Only the genre is different. Iron Tide jumps from #4 to #1 and Storm Runner drops from #1 to #2, while #3–5 stay the same. My top score is lower (3.75 vs 4.91) because Iron Tide's mood is "angry", not "intense". This is the clearest proof that the genre label alone can reorder the top of the list. |
+| Me vs High-Energy Pop | Only Gym Hero is in both lists. My low valence target (0.4) pushes the bright, happy pop songs out. |
+| Me vs Chill Lofi | Opposite energy targets. The only shared song is Concrete Crown at #5, for different reasons: the lofi list gets it through the hip-hop family link, and mine gets it from energy closeness. |
+| Me vs Genre Not In Catalog | No songs in common. Polka wants happy, mid-energy songs, and I want intense, high-energy ones. |
+| Me vs Acoustic Headbanger | Both are metal, so Iron Tide is #1 in both, and Gym Hero appears in both on energy. After that the acoustic bonus pulls country and lofi into the headbanger's list, while my "intense" mood pulls in Storm Runner instead. |
+| Me vs Empty Profile | I get a clear metal winner. The empty profile gets an alphabetical list. |
 | High-Energy Pop vs Chill Lofi | Completely different lists. Pop picks upbeat, happy songs around 0.8 energy, while lofi picks quiet, acoustic tracks around 0.35. Energy and the acoustic bonus pull them to opposite ends of the catalog. |
 | High-Energy Pop vs Deep Intense Rock | Both want high energy, so Gym Hero appears in both. Pop gets it through genre, rock through mood and energy. Rock's lower valence target (0.4) pushes the bright pop songs out and darker songs like Night Drive Loop and Iron Tide in. |
 | High-Energy Pop vs Genre Not In Catalog | Same "happy" mood, so the three happy pop-family songs top both lists, but polka earns no genre points. The scores drop from about 4–5 to under 2, and #4–5 are filled purely by energy closeness to 0.6. |

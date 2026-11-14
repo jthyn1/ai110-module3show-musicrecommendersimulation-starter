@@ -124,7 +124,7 @@ Each line shows the rank, title and artist, the total score (out of 5.5), and th
 
 ### Profiles and edge cases
 
-`src/main.py` runs six profiles: High-Energy Pop, Chill Lofi, Deep Intense Rock, and three edge cases (a genre that isn't in the catalog, a metal fan who likes acoustic music, and an empty profile). The full output for every profile, plus a comparison of each pair of profiles, is in [model_card.md → Evaluation](model_card.md#7-evaluation).
+`src/main.py` runs seven profiles: my own ("Me", a metal/intense listener), High-Energy Pop, Chill Lofi, Deep Intense Rock, and three edge cases (a genre that isn't in the catalog, a metal fan who likes acoustic music, and an empty profile). The full output for every profile, plus a comparison of each pair of profiles, is in [model_card.md → Evaluation](model_card.md#7-evaluation).
 
 ### Weight shift: genre halved, energy doubled
 
